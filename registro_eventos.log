@@ -1,0 +1,176 @@
+================================================================================
+REGISTRO DE EVENTOS - SISTEMA SOFTWARE FJ
+================================================================================
+Archivo creado: 2026-04-28 22:12:21
+================================================================================
+
+[2026-04-28 22:12:21] VALIDACION - Cliente [VÁLIDO]
+  └─ Detalles: Cliente Juan Pérez García validado correctamente
+
+[2026-04-28 22:12:21] INFO - EVENTO: Cliente creado exitosamente
+  └─ Detalles: ID: CLI001, Nombre: Juan Pérez García
+
+[2026-04-28 22:12:21] ERROR - EmailInvalido
+  └─ Mensaje: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: María López
+  └─ Excepción: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: María López
+
+[2026-04-28 22:12:21] VALIDACION - Cliente [VÁLIDO]
+  └─ Detalles: Cliente Carlos Rodríguez validado correctamente
+
+[2026-04-28 22:12:21] INFO - EVENTO: Cliente creado exitosamente
+  └─ Detalles: ID: CLI003, Nombre: Carlos Rodríguez
+
+[2026-04-28 22:12:21] ERROR - TelefonoInvalido
+  └─ Mensaje: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: Ana González
+  └─ Excepción: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: Ana González
+
+[2026-04-28 22:12:21] INFO - EVENTO: Servicios creados exitosamente
+  └─ Detalles: Se crearon 3 servicios (Sala, Equipos, Asesoría)
+
+[2026-04-28 22:12:21] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES001 para cliente Juan Pérez García validada
+
+[2026-04-28 22:12:21] OPERACION - Creación de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES001 para Juan Pérez García
+
+[2026-04-28 22:12:21] INFO - EVENTO: Cambio de disponibilidad
+  └─ Detalles: Servicio Alquiler de Equipos ahora está no disponible
+
+[2026-04-28 22:12:21] ERROR - ServicioNoDisponible
+  └─ Mensaje: [ERR_SERVICIO_NO_DISPONIBLE] El servicio 'Alquiler de Equipos' no está disponible
+  └─ Excepción: [ERR_SERVICIO_NO_DISPONIBLE] El servicio 'Alquiler de Equipos' no está disponible
+
+[2026-04-28 22:12:21] INFO - EVENTO: Cambio de disponibilidad
+  └─ Detalles: Servicio Alquiler de Equipos ahora está disponible
+
+[2026-04-28 22:12:21] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES002 para cliente Juan Pérez García validada
+
+[2026-04-28 22:12:21] OPERACION - Confirmación de Reserva RES002 [EXITOSA]
+  └─ Detalles: Cliente: Juan Pérez García, Servicio: Alquiler de Equipos, Costo: $810000.0
+
+[2026-04-28 22:12:21] OPERACION - Confirmación de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES002 confirmada
+
+[2026-04-28 22:12:21] ERROR - DatosInvalidosError
+  └─ Mensaje: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+  └─ Excepción: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+
+[2026-04-28 22:12:21] ERROR - ParametrosInvalidos
+  └─ Mensaje: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo de la reserva: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+  └─ Excepción: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo de la reserva: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+
+[2026-04-28 22:12:21] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES003 para cliente Carlos Rodríguez validada
+
+[2026-04-28 22:12:21] OPERACION - Confirmación de Reserva RES003 [EXITOSA]
+  └─ Detalles: Cliente: Carlos Rodríguez, Servicio: Asesoría Especializada, Costo: $1094799.9999999998
+
+[2026-04-28 22:12:21] OPERACION - Procesamiento de Reserva RES003 [EXITOSA]
+  └─ Detalles: Monto procesado: $1094799.9999999998
+
+[2026-04-28 22:12:21] OPERACION - Ciclo Completo de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES003 completada exitosamente
+
+[2026-04-28 22:12:21] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES004 para cliente Juan Pérez García validada
+
+[2026-04-28 22:12:21] OPERACION - Cancelación de Reserva RES004 [EXITOSA]
+  └─ Detalles: Razón: Cliente solicita cancelación
+
+[2026-04-28 22:12:21] OPERACION - Cancelación de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES004 cancelada
+
+[2026-04-28 22:12:21] ERROR - OperacionNoPermitidaError
+  └─ Mensaje: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+  └─ Excepción: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+
+[2026-04-28 22:12:21] ERROR - OperacionInvalida
+  └─ Mensaje: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+  └─ Excepción: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+
+[2026-04-29 21:07:30] VALIDACION - Cliente [VÁLIDO]
+  └─ Detalles: Cliente Juan Pérez García validado correctamente
+
+[2026-04-29 21:07:30] INFO - EVENTO: Cliente creado exitosamente
+  └─ Detalles: ID: CLI001, Nombre: Juan Pérez García
+
+[2026-04-29 21:07:30] ERROR - EmailInvalido
+  └─ Mensaje: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: María López
+  └─ Excepción: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: María López
+
+[2026-04-29 21:07:30] VALIDACION - Cliente [VÁLIDO]
+  └─ Detalles: Cliente Carlos Rodríguez validado correctamente
+
+[2026-04-29 21:07:30] INFO - EVENTO: Cliente creado exitosamente
+  └─ Detalles: ID: CLI003, Nombre: Carlos Rodríguez
+
+[2026-04-29 21:07:30] ERROR - TelefonoInvalido
+  └─ Mensaje: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: Ana González
+  └─ Excepción: [ERR_CLIENTE_INVALIDO] Datos inválidos para cliente: Ana González
+
+[2026-04-29 21:07:30] INFO - EVENTO: Servicios creados exitosamente
+  └─ Detalles: Se crearon 3 servicios (Sala, Equipos, Asesoría)
+
+[2026-04-29 21:07:30] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES001 para cliente Juan Pérez García validada
+
+[2026-04-29 21:07:30] OPERACION - Creación de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES001 para Juan Pérez García
+
+[2026-04-29 21:07:30] INFO - EVENTO: Cambio de disponibilidad
+  └─ Detalles: Servicio Alquiler de Equipos ahora está no disponible
+
+[2026-04-29 21:07:30] ERROR - ServicioNoDisponible
+  └─ Mensaje: [ERR_SERVICIO_NO_DISPONIBLE] El servicio 'Alquiler de Equipos' no está disponible
+  └─ Excepción: [ERR_SERVICIO_NO_DISPONIBLE] El servicio 'Alquiler de Equipos' no está disponible
+
+[2026-04-29 21:07:30] INFO - EVENTO: Cambio de disponibilidad
+  └─ Detalles: Servicio Alquiler de Equipos ahora está disponible
+
+[2026-04-29 21:07:30] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES002 para cliente Juan Pérez García validada
+
+[2026-04-29 21:07:30] OPERACION - Confirmación de Reserva RES002 [EXITOSA]
+  └─ Detalles: Cliente: Juan Pérez García, Servicio: Alquiler de Equipos, Costo: $810000.0
+
+[2026-04-29 21:07:30] OPERACION - Confirmación de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES002 confirmada
+
+[2026-04-29 21:07:30] ERROR - DatosInvalidosError
+  └─ Mensaje: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+  └─ Excepción: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+
+[2026-04-29 21:07:30] ERROR - ParametrosInvalidos
+  └─ Mensaje: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo de la reserva: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+  └─ Excepción: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo de la reserva: [ERR_CALCULO_INCONSISTENTE] Error al calcular costo: [ERR_DATOS_INVALIDOS] Los días deben ser mayor a 0
+
+[2026-04-29 21:07:30] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES003 para cliente Carlos Rodríguez validada
+
+[2026-04-29 21:07:30] OPERACION - Confirmación de Reserva RES003 [EXITOSA]
+  └─ Detalles: Cliente: Carlos Rodríguez, Servicio: Asesoría Especializada, Costo: $1094799.9999999998
+
+[2026-04-29 21:07:30] OPERACION - Procesamiento de Reserva RES003 [EXITOSA]
+  └─ Detalles: Monto procesado: $1094799.9999999998
+
+[2026-04-29 21:07:30] OPERACION - Ciclo Completo de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES003 completada exitosamente
+
+[2026-04-29 21:07:30] VALIDACION - Reserva [VÁLIDO]
+  └─ Detalles: Reserva RES004 para cliente Juan Pérez García validada
+
+[2026-04-29 21:07:30] OPERACION - Cancelación de Reserva RES004 [EXITOSA]
+  └─ Detalles: Razón: Cliente solicita cancelación
+
+[2026-04-29 21:07:30] OPERACION - Cancelación de Reserva [EXITOSA]
+  └─ Detalles: Reserva RES004 cancelada
+
+[2026-04-29 21:07:30] ERROR - OperacionNoPermitidaError
+  └─ Mensaje: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+  └─ Excepción: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+
+[2026-04-29 21:07:30] ERROR - OperacionInvalida
+  └─ Mensaje: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+  └─ Excepción: [ERR_OPERACION_NO_PERMITIDA] No se puede confirmar una reserva en estado CANCELADA
+
